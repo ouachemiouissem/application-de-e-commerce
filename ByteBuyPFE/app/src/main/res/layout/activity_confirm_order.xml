@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.client.ConfirmOrderAct">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/royal_of_blue"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/total_price_display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Sous-total"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="DZD"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Veuillez remplir le formulaire pour confirmer la commande :"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text">
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebox_shape"
+            android:ems="10"
+            android:hint="Nom complet"
+            android:inputType="textPersonName"
+            android:minHeight="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/whitebox_shape"
+            android:ems="10"
+            android:hint="Numéro de telephone"
+            android:inputType="phone"
+            android:minHeight="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/full_name"
+            app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/whitebox_shape"
+            android:ems="10"
+            android:hint="Adresse de livraison"
+            android:inputType="textPersonName"
+            android:minHeight="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/phone_number"
+            app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+        <EditText
+            android:id="@+id/wilaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/whitebox_shape"
+            android:ems="10"
+            android:hint="Wilaya"
+            android:inputType="textPersonName"
+            android:minHeight="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/address"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <EditText
+            android:id="@+id/commune"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/whitebox_shape"
+            android:ems="10"
+            android:hint="Commune"
+            android:inputType="textPersonName"
+            android:minHeight="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/wilaya"
+            app:layout_constraintTop_toBottomOf="@+id/wilaya" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/whitebox_shape"
+            android:backgroundTint="@color/royal_of_blue"
+            android:ems="10"
+            android:text="envoyer"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

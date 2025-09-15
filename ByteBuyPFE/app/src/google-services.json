@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "464720554743",
+    "project_id": "bytebye-10494",
+    "storage_bucket": "bytebye-10494.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464720554743:android:f17604af2b848bc8c741f2",
+        "android_client_info": {
+          "package_name": "com.aliwis.bytebye"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464720554743-g45cg89iuf1fhr2pu0pok7urckf8hgu8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb8j2Oq4XIK8BC9QV09D-gyxy_oBAZFbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464720554743-g45cg89iuf1fhr2pu0pok7urckf8hgu8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

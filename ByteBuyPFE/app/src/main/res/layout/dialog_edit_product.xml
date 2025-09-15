@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/edit_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="15"
+        android:hint="Nom"
+        android:inputType="text"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Description"
+        android:inputType="text"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Prix"
+        android:inputType="number"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_product_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Quantité"
+        android:inputType="number"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/edit_product_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_down"
+        android:padding="8dp"
+        android:text="sélectionne Categorie"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/whitebox_shape"
+            android:backgroundTint="@color/royal_of_blue"
+            android:text="Annuler"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/whitebox_shape"
+            android:backgroundTint="@color/royal_of_blue"
+            android:text="enregistrer"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

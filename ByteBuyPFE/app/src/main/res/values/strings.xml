@@ -1,0 +1,14 @@
+<resources>
+    <string name="already_have_account_login">Vous avez déjà un compte ? <b><u>S\'authentifier</u></b> </string>
+    <string name="dont_have_account_register"> <b><u>Créer un compte ?</u></b> </string>
+    <string name="app_name">ByteBuy</string>
+    <string name="forgot_password"><b><u>Mot de passe oublié ?</u></b> </string>
+    <string name="home">Acceuil</string>
+    <string name="productModel">Produits</string>
+    <string name="orderModels">Commandes</string>
+    <string name="title">Titre</string>
+    <string name="message">Message</string>
+    <string name="profile">Profile</string>
+    <string name="cart">Panier</string>
+    <string name="quantityAvailable">Quantité disponible : %d</string>
+</resources>

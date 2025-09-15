@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="40dp"
+    android:layout_marginLeft="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.vendor.AddProduct">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/select_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img"
+        app:riv_corner_radius="15dp" />
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Nom"
+        android:inputType="text"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/product_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Description"
+        android:inputType="text"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Prix"
+        android:inputType="number"
+        android:textSize="18sp" />
+ <EditText
+        android:id="@+id/product_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+     android:hint="Quantité"
+        android:inputType="number"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/select_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_down"
+        android:padding="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Sélectionner la catégorie"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/royal_of_blue"
+        android:text="Ajouter un produit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+>
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#F3F3F3"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/order_img"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mac">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/order_img"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nom complet"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/order_phonenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:maxLines="3"
+                        android:text="numéro de telephone"
+                        android:textColor="@color/black"
+                        android:textSize="13sp">
+
+                    </TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/order_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:text="Status"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+            <TextView
+
+                android:id="@+id/order_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="City , commune"
+                android:textColor="@color/black"
+                android:textSize="13sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/order_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="3"
+                android:text="adresse"
+                android:textColor="@color/black"
+                android:textSize="13sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/accept_refuse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/refuse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/whitebox_shape"
+                    android:backgroundTint="@color/red"
+                    android:text="Refuser"
+
+                    android:textColor="@color/white">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/accept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Accepter"
+                    android:background="@drawable/whitebox_shape"
+                    android:backgroundTint="@color/green"
+                    android:textColor="@color/white"
+
+                    >
+                </androidx.appcompat.widget.AppCompatButton>
+
+                >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:paddingBottom="5dp"
+            android:text="4500 DZD"
+            android:textColor="@color/primaryColor"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

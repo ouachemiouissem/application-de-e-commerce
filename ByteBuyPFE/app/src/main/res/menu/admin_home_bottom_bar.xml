@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/adminHomeBottomBar_Home"
+        android:icon="@drawable/home_icon"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/adminHomeBottomBar_Product"
+        android:icon="@drawable/product_icon"
+        android:title="@string/productModel" />
+    <item
+        android:id="@+id/adminHomeBottomBar_Orders"
+        android:icon="@drawable/delivery_icon"
+        android:title="@string/orderModels" />
+
+</menu>
